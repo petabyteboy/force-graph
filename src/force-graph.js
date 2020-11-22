@@ -21,14 +21,10 @@ const linkedProps = Object.assign(
   ...[
     'nodeColor',
     'nodeAutoColorBy',
-    'nodeCanvasObject',
-    'nodeCanvasObjectMode',
     'linkColor',
     'linkAutoColorBy',
     'linkLineDash',
     'linkWidth',
-    'linkCanvasObject',
-    'linkCanvasObjectMode',
     'linkDirectionalArrowLength',
     'linkDirectionalArrowColor',
     'linkDirectionalArrowRelPos',
@@ -50,6 +46,8 @@ const linkedProps = Object.assign(
     'onEngineStop'
   ].map(p => ({ [p]: bindFG.linkProp(p)})),
   ...[
+    'nodeCanvasObject',
+    'nodeCanvasObjectMode',
     'nodeRelSize',
     'nodeId',
     'nodeVal',
@@ -57,6 +55,8 @@ const linkedProps = Object.assign(
     'linkSource',
     'linkTarget',
     'linkVisibility',
+    'linkCanvasObject',
+    'linkCanvasObjectMode',
     'linkCurvature'
   ].map(p => ({ [p]: bindBoth.linkProp(p)}))
 );
